@@ -5,7 +5,7 @@ const app = document.querySelector('#app');
 const go = (path) => { history.pushState({}, '', path); render(); window.scrollTo(0, 0); };
 
 function frame(content, active = '') {
-  return `<div class="scanlines"></div><header class="topbar"><button class="quit" data-route="/" aria-label="Return to main menu"><span>←</span> QUIT</button><div class="status"><span class="status-dot"></span> KYROXE SYSTEMS <span class="divider">//</span> ONLINE</div><div class="clock">${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div></header><main class="game-frame ${active}">${content}</main><footer class="footer"><span>KYX-001</span><span>© 2025 KYROXE</span><span>BUILD 01.04</span></footer>`;
+  return `<div class="scanlines"></div><header class="topbar"><button class="quit" data-route="/" aria-label="Return to main menu"><span>←</span> QUIT</button><div class="status"><span class="status-dot"></span> KYROXE SYSTEMS <span class="divider">//</span> ONLINE</div><div class="clock">${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div></header><main class="game-frame ${active}">${content}</main><footer class="footer"><span>KYX-001</span><span>© 2026 KYROXE</span><span>BUILD 01.04</span></footer>`;
 }
 
 function menu() {
